@@ -1,6 +1,8 @@
-function takeANumber(line, name) {
-  var listLength = line.push(name)
-  var welcome = `Welcome, ${name}. You are number ${listLength} in line.`
+var number = 1
+function takeANumber(line) {
+  var listLength = line.push(number)
+  var welcome = `Welcome, ${number}. You are number ${listLength} in line.`
+  number += 1
   return welcome 
 }
 
